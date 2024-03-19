@@ -1,27 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#pegawai-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+#pegawai-form div {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
 table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  th, td {
-    padding: 10px;
-    border: 1px solid #ddd;
-  }
-  
-  th {
-    background-color: #f2f2f2;
-    font-weight: bold;
-  }
-  
-  tfoot tr td {
-    font-weight: bold;
-    background-color: #f2f2f2;
-  }
-  
-  tbody tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-  
-  #totalGaji {
-    text-align: right;
-  }
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Menyesuaikan ukuran font di dalam alert */
+.swal2-popup {
+  font-size: 14px;
+}
+
+/* Menyesuaikan lebar tabel di dalam alert */
+.swal2-table {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Menyesuaikan border di dalam alert */
+.swal2-table th,
+.swal2-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/* Menambahkan latar belakang pada header tabel di dalam alert */
+.swal2-table th {
+  background-color: #f2f2f2;
+}
+
+/* Menambahkan margin pada tombol close di dalam alert */
+.swal2-closeButton {
+  margin-top: 10px;
+}
+
+/* Menambahkan hover effect pada tombol close di dalam alert */
+.swal2-closeButton:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}

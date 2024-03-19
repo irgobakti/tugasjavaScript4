@@ -4,36 +4,35 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Data Pegawai</title>
-
-     <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/sweetalert2@11">
+<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 
-<table>
-  <thead>
-    <tr>
-      <th>Nama Pegawai</th>
-      <th>Jabatan</th>
-      <th>Status</th>
-      <th>Gaji Pokok</th>
-      <th>Tunjangan Jabatan</th>
-      <th>BPJS</th>
-      <th>Tunjangan Keluarga</th>
-      <th>Total Gaji</th>
-    </tr>
-  </thead>
-  <tbody id="dataPegawai">
-    <!-- Data Pegawai akan dimasukkan disini oleh JavaScript -->
-  </tbody>
-  <tfoot>
-    <tr>
-      <td>Total Gaji</td>
-      <td id="totalGaji"></td>
-    </tr>
-  </tfoot>
-</table>
+<form id="pegawai-form">
+    <div>
+        <label for="nama">Nama Pegawai:</label>
+        <input type="text" id="nama" name="nama">
+    </div>
+    <div>
+        <label for="jabatan">Jabatan:</label>
+        <select id="jabatan" name="jabatan">
+            <option value="Manager">Manager</option>
+            <option value="Asisten Manager">Asisten Manager</option>
+            <option value="Staff">Staff</option>
+        </select>
+    </div>
+    <div>
+        <label for="status">Status:</label>
+        <select id="status" name="status">
+            <option value="menikah">Menikah</option>
+            <option value="belum">Belum Menikah</option>
+        </select>
+    </div>
+    <button type="button" onclick="tambahPegawai()">Tambah Pegawai</button>
+</form>
 
-
-<script src="js/gaji.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/js/script.js"></script>
 </body>
 </html>
